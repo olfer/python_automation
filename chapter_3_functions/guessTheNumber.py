@@ -1,5 +1,6 @@
 # Игра в угадывание чисел.
 import random
+
 secret_number = random.randint(1, 20)
 print('Число загадано в диапазоне от 1 до 20. попробуй его угадать.')
 
@@ -14,8 +15,8 @@ for guesses_taken in range(1, 7):
     elif guess > secret_number:
         print('Предложенное число больше загаданного.')
     else:
-        break # Соответсвует правильному ответу!
-        
+        break  # Соответсвует правильному ответу!
+
 if guess == secret_number:
     print('Верно! Количество попыток: ' + str(guesses_taken))
 else:
